@@ -39,7 +39,7 @@ export default function Home(Props) {
       setTimeout(() => {
         setTotal(0);
         setAuxiliar(0);
-      }, 4000);
+      }, 1000);
     }
   };
 
@@ -50,14 +50,14 @@ export default function Home(Props) {
       setTimeout(() => {
         setTotal(0);
         setAuxiliar(0);
-      }, 2000);
+      }, 1000);
     }
   };
 
   if (total > 3) {
     setTimeout(() => {
       setTotal(0);
-    }, 2000);
+    }, 1000);
   }
 
   return (

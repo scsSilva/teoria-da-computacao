@@ -5,7 +5,7 @@ import { GlobalContext } from "../contexts/GlobalContext";
 import { pegarLanche } from "../home";
 
 export default function Food(props) {
-  const { id, name, image, price } = props.food;
+  const { name, image, price } = props.food;
   const { total, comidas, setComidas } = useContext(GlobalContext);
   const [disabled, setDisabled] = useState(true);
 
@@ -29,11 +29,11 @@ export default function Food(props) {
       <button
         disabled={disabled}
         onClick={handleClickGetFood}
-        className={`absolute z-10 left-[-5px] top-[-5px] h-[32px] w-[32px] bg-white flex items-center justify-center rounded-full ${
+        className={`absolute z-10 left-[-5px] top-[-5px] h-[32px] w-[32px] bg-green-700 flex items-center justify-center rounded-full ${
           disabled ? "opacity-30 cursor-default" : "cursor-pointer"
         }`}
       >
-        <Check color={disabled ? "#2c3e50" : "#16a085"} size={25} />
+        <Check color="#fff" size={25} />
       </button>
       <Image src={image} width={100} height={100} className="opacity-40" />
     </div>
